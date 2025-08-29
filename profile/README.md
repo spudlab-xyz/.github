@@ -4,7 +4,7 @@ SpudLab is a GitHub organization focused on open-source projects in science, tec
 
 ## Projects
 
-A variety of projects are maintained under this organization. You can browse current repositories [here](https://github.com/spudlab-xyz).  
+A variety of projects are maintained under this organization. You can browse current repositories [here](https://github.com/orgs/spudlab-xyz/repositories).  
 
 ## Contributing
 
