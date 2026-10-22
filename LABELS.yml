@@ -1,0 +1,12 @@
+- name: bug
+  color: d73a4a
+  description: Something is not working as intended
+- name: enhancement
+  color: a2eeef
+  description: A request for new or improved behaviour
+- name: needs-triage
+  color: fbca04
+  description: Awaiting initial maintainer review and routing
+- name: question
+  color: d876e3
+  description: Further information is requested

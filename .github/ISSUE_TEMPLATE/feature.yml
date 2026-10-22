@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a user need or improvement for a Spudlab project
+title: "[Feature]: "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. A request starts discussion; it is not a commitment to scope or delivery.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find an open request covering this need.
+          required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: Who has the need, what are they trying to achieve, and what currently gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the useful outcome without assuming a particular implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Note current workarounds or other approaches, including “None known.”
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples, constraints, compatibility considerations, or related links. Do not include sensitive information.
+    validations:
+      required: false
