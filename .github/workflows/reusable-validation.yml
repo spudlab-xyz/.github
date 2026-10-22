@@ -1,0 +1,41 @@
+name: Reusable documentation and YAML validation
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+
+      - name: Validate YAML syntax and local Markdown links
+        shell: bash
+        run: |
+          ruby <<'RUBY'
+          require "yaml"
+          Dir.glob("**/*.{yml,yaml}", File::FNM_DOTMATCH).reject { |path| path.start_with?(".git/") }.each do |path|
+            YAML.safe_load_file(path, aliases: true)
+          end
+          RUBY
+          ruby <<'RUBY'
+          missing = []
+          Dir.glob("**/*.md", File::FNM_DOTMATCH).reject { |path| path.start_with?(".git/") }.each do |path|
+            body = File.read(path)
+            body.scan(/\[[^\]]*\]\(([^)]+)\)/).flatten.each do |target|
+              next if target.empty? || target.start_with?("#", "http://", "https://", "mailto:")
+              clean = target.split("#", 2).first
+              next if clean.empty?
+              resolved = File.expand_path(clean, File.dirname(path))
+              missing << "#{path}: #{target}" unless File.exist?(resolved)
+            end
+          end
+          abort("Missing local links:\n#{missing.join("\n")}") unless missing.empty?
+          RUBY

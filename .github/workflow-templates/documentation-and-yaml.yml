@@ -1,0 +1,13 @@
+name: Documentation and YAML validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    uses: spudlab-xyz/.github/.github/workflows/reusable-validation.yml@REPLACE_WITH_REVIEWED_FULL_COMMIT_SHA

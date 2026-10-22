@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Each project documents its supported versions. If it does not, only the latest release should be assumed to receive security fixes.
+Each project documents its supported versions, if any. If a project does not publish a supported-versions policy, do not assume that any version will receive security fixes.
 
 ## Reporting a vulnerability
 

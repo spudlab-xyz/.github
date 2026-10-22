@@ -1,0 +1,6 @@
+{
+  "name": "Documentation and YAML validation",
+  "description": "Validate YAML syntax and repository-local Markdown links with least privilege.",
+  "iconName": "octicon checklist",
+  "categories": ["Continuous integration"]
+}

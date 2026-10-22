@@ -14,4 +14,8 @@ Repository-specific instructions take precedence. By participating, you agree to
 
 Software agents may triage, implement, review, and respond using the shared `joe-mccarthy` GitHub identity. A response from that account is not proof of independent or human review. Agents must disclose material automated participation and must not approve their own work.
 
-For a human decision, open a public issue in the relevant repository with **Human review requested** in the title. The route is verified as GitHub-native, but a human response-time commitment has not yet been verified. Never post secrets or sensitive reports in an issue.
+If the repository has Issues enabled, request a human decision by opening a public issue and adding **Human review requested** to the title. This records the request for routing to the owner; it does not guarantee that the first response, or any response from the shared `joe-mccarthy` account, is human. No response time is promised. If Issues are disabled, use only a repository-specific route that is explicitly published and verified. Never post secrets or sensitive reports in an issue.
+
+## Accessibility
+
+For user-facing changes, describe the keyboard and assistive-technology impact in the pull request. Preserve semantic structure and visible focus; give meaningful controls accessible names; provide text alternatives for informative images; do not use colour alone to convey meaning; and check the affected interface at 200% zoom. Record what you tested and any known limitation. Report non-sensitive accessibility barriers through the repository's public issue route when Issues are enabled, without including personal or sensitive data. Do not claim conformance without evidence. Repository-specific accessibility requirements take precedence.
