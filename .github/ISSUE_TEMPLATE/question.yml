@@ -1,0 +1,26 @@
+name: Support question
+description: Ask a public, non-sensitive question
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: "Search existing documentation and issues first. Do not include secrets, vulnerabilities, personal data, or sensitive conduct reports."
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you tried?
+    validations:
+      required: true
+  - type: checkboxes
+    id: human
+    attributes:
+      label: Escalation
+      options:
+        - label: I am requesting a human decision and have added "Human review requested" to the title.
