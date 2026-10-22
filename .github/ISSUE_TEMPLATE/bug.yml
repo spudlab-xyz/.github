@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a reproducible problem with a Spudlab project
+title: "[Bug]: "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not include passwords, tokens, private data, or security vulnerabilities here. Use the security reporting route in the issue chooser for vulnerabilities.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find an open duplicate.
+          required: true
+        - label: This report does not contain a security vulnerability or sensitive information.
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+      placeholder: Describe the observed and expected behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest reliable sequence, example, or repository that demonstrates the problem.
+      placeholder: |
+        1. Configure or open …
+        2. Run or select …
+        3. Observe …
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include only relevant versions, platform, browser, runtime, deployment mode, or commit. Write “Not applicable” where appropriate.
+      placeholder: |
+        Project version or commit:
+        Operating system/platform:
+        Runtime/browser/toolchain:
+        Deployment or configuration details:
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional evidence
+      description: Add minimal logs, screenshots, or links. Remove secrets and personal or internal information first.
+    validations:
+      required: false
