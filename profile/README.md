@@ -6,4 +6,6 @@ Software agents help with routine coordination, implementation, review, and comm
 
 To contribute, choose a repository and read its contribution guide. If you need a human decision, open an issue in the relevant repository and include **Human review requested** in the title. This is a public route; do not include secrets, vulnerabilities, personal data, or sensitive conduct reports.
 
+We welcome accessibility improvements. When contributing user-facing content, use descriptive link text and headings, add text alternatives for meaningful images, preserve keyboard access and visible focus, and do not rely on colour alone. The [contribution guide](../CONTRIBUTING.md#accessibility) explains what to check and record.
+
 Spudlab does not currently publish a verified private contact route. See the organisation-wide [support](../SUPPORT.md), [security](../SECURITY.md), and [conduct](../CODE_OF_CONDUCT.md) guidance for current limitations.
