@@ -1,7 +1,8 @@
 # Spudlab shared organization documentation
 
-This repository is the canonical home for Spudlab's organization-wide, public-safe
-operating documentation and reusable community files.
+This repository is the home for Spudlab's organization-wide, public-safe guidance
+and reusable community files. Private operating records and policies are maintained
+separately and take precedence for internal work.
 
 ## Operating documentation
 
