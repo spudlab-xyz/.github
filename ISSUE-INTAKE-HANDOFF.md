@@ -4,7 +4,7 @@ This repository contains the canonical generic issue forms and pull request temp
 
 GitHub community files are inherited from the public organization `.github` repository only when the destination repository does not contain the corresponding local file. A valid local issue form or `.github/ISSUE_TEMPLATE/config.yml` replaces the inherited issue-template set rather than merging with it. A local pull request template similarly takes precedence.
 
-The issue forms require exact `bug`, `enhancement`, and `needs-triage` labels in every destination repository. Reconcile missing names without deleting unrelated labels or changing existing label color and description unless normalization is separately approved.
+The bug and feature forms require exact `bug`, `enhancement`, and `needs-triage` labels in every destination repository. The preserved support-question form additionally requires `question`. `LABELS.yml` records the full issue-form label union. Reconcile missing names without deleting unrelated labels or changing existing label color and description unless normalization is separately approved.
 
 Support and security chooser links point to this repository's verified `SUPPORT.md` and `SECURITY.md`. The security document records the current absence of a verified private intake route and must not be represented as providing one.
 

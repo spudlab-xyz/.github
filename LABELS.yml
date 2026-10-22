@@ -7,3 +7,6 @@
 - name: needs-triage
   color: fbca04
   description: Awaiting initial maintainer review and routing
+- name: question
+  color: d876e3
+  description: Further information is requested
