@@ -2,16 +2,7 @@
 
 **Community-first, open-source tools for science. Building software and hardware for collecting, sharing and understanding data.**
 
-Spudlab aims to make scientific data easier to gather, preserve, inspect and use. Weather is the starting point, not a limit on the subjects Spudlab may explore.
-
-## What we intend to build
-
-The first projects are planned and in early development:
-
-- a weather history server that ingests observations from external providers and people's own weather stations, stores historical data and exposes it through a REST API; and
-- open weather station hardware and firmware designed to connect to that server.
-
-The server is intended for observations and historical data, not weather forecasting. Project repositories will be linked here when they are public and ready to use.
+Spudlab aims to make scientific data easier to gather, preserve, inspect and use.
 
 ## How we work
 
