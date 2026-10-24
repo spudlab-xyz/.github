@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose an improvement or new capability
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the need before prescribing an implementation. Do not include credentials, personal data, private locations or provider-restricted data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What limitation or user need should be addressed? Include relevant scientific or hardware context.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Intended benefit
+      description: Who would benefit, and what outcome would improve?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Possible approach
+      description: Suggest an approach, alternatives or compatibility considerations if you have them.
+    validations:
+      required: false

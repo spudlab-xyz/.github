@@ -1,0 +1,36 @@
+name: Bug report
+description: Report reproducible incorrect behaviour
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include credentials, personal data, private locations or provider-restricted data. Report security vulnerabilities privately using this repository's Security policy instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the behaviour and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can it be reproduced?
+      description: Give the smallest reliable sequence, sample or hardware setup. Use synthetic or redacted data.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Versions and environment
+      description: Include the project version or commit and relevant operating system, runtime, browser, firmware and hardware versions.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add safe logs, screenshots, measurements or other details if useful.
+    validations:
+      required: false

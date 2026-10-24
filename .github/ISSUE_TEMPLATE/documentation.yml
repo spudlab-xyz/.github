@@ -1,0 +1,29 @@
+name: Documentation improvement
+description: Report unclear, missing or inaccessible documentation
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, personal data, private locations or provider-restricted data.
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: Link the page or name the file and section.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs improving?
+      description: Explain what is missing, unclear, incorrect or inaccessible and what information would help.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add the project version, audience or suggested wording if useful.
+    validations:
+      required: false
