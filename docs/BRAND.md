@@ -18,7 +18,9 @@ Use sufficient contrast for text, controls and diagrams. The full palette docume
 
 The approved logo is a solid mint laboratory flask on charcoal, with a potato-shaped negative-space cutout in the lower chamber and three small mint skin marks.
 
-The approved source image is not currently stored in this repository. When supplied, add the unchanged GitHub-ready asset as `spudlab-github-avatar.png`, keep it below 1 MB and use meaningful alt text such as “Spudlab flask logo” wherever it appears. Do not redraw, approximate or substitute the logo.
+![Spudlab flask logo](../spudlab-github-avatar.png)
+
+The approved GitHub-ready asset is stored at the repository root as `spudlab-github-avatar.png`. Keep the file below 1 MB and use meaningful alt text wherever it appears. Do not redraw, approximate or substitute the logo.
 
 ## Use
 
